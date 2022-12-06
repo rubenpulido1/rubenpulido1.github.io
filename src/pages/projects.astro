@@ -5,47 +5,38 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Projects</div>
   </div>
 
+<!-- FILE SHARING -->
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="End-to-End Encrypted File Sharing System"
+    img="/file-encryption.png"
+    desc="Designed and implemented the client application for a secure file sharing system that was secured with\
+            cryptography using Symmetric Encryption (AES-CTR), HMAC, Key Derivation (Argon2), and RSA Encryption (key generation & signing).\
+            Created Golang client featuring authentication, file storage, file sharing, and access revocation functionalities."
+    url="https://fa21.cs161.org/proj2/"
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
-  </div>
+<!-- GREENHOUSE -->
+  <HorizontalCard
+    title="Greenhouse (Web Application)"
+    img="/Poster-1.png"
+    desc="Designed and implemented a web application with fully functional navigation as well as limited degree of user\
+            interactivity. Backend was implemented using JavaScript, and Bootstrap for frontend design."
+    url="https://docs.google.com/document/d/1g7VMlPbCgve1XahevxpZ9oAfjfD3pRD2Az1uV7_BL-E/edit"
+  />
+  <div class="divider my-0"></div>
 
+  <!-- GITLET PROJECT -->
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Gitlet"
+    img="/git.logo.bmp"
+    desc="Designed and implemented a version control system mimicking Git. Includes support for 10+ commands including \
+          	init, add, commit, checkout, branch, reset, merge, rm, log, and status. Built using Java, codewas available \
+          	upon request."
+    url=""https://sp21.datastructur.es/materials/proj/proj2/proj2""
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
 </BaseLayout>

@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/experience/TimeLine.astro";
+---
+
+<BaseLayout title = "Experience">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Background</div>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="University of California, Berkeley"
+      subtitle="2020 to 2023. B.A in Computer Science"
+	  desc="Relevant coursework: Data Structures & Algorithms, Computer Architecture, Databases, Quantum Computing, Discrete Math, Linear algebra and Circuits, Calculus 1/2/3, Computer Security, and User Interface Design and Development."
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Undergraduate Researcher"
+      subtitle="Software Developer. Jan 2021 - June 2022"
+      desc="As an undergraduate reasearcher , I improved refactoring, UI/UX flow and playability, and source code readability/user friendliness. \
+            Converted the game code from its original RenPy version to the current web-based JavaScript version. \
+            Created an Object-Oriented Programming version of Hack 1 in Python and JavaScript."
+    />
+    <TimeLineElement
+      title="Project Manager"
+      subtitle="Undergraduate Researcher Jan 2022 - Jun 2022"
+      desc="Coordinated a team of 10 software developers and research assistants by developing a detailed SMART plan to ensure weekly tasks are delivered on-time. \
+            Delegated tasks to three junior software developers based on individual interest, strengths, and experience levels. Tasks are meant to achieve a bug free \
+            JavaScript version of our game that will be ready for workshops. Ran weekly meetings to measure members tasks are progressing to meet our overall project goal \
+            and provide support if necessary."
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+	 <li>Python</li>
+	 <li>Java</li>
+	 <li>R</li>
+	 <li>JavaScript</li>
+	 <li>HTML/CSS</li>
+	 <li>C</li>
+	 <li>RISC-V</li>
+	 <li>x86</li>
+	 <li>Golang</li>
+	 <li>SQL</li>
+	 <li>Node.js</li>
+	 <li>Scheme</li>
+  </ul>
+</BaseLayout>
